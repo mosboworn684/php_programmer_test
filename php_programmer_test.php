@@ -1,5 +1,5 @@
 
-    <!-- ข้อ 1.1
+    ข้อ 1.1
         for ($i = 1; $i <= 5; $i++) {
             for ($j = 1; $j <= 5 - $i; $j++) {
                 echo "&nbsp;&nbsp;";
@@ -73,9 +73,7 @@
                 </body>
             </html>
     ข้อ 5.2
-        INSERT INTO branch (name) VALUES ('เชียงใหม่');
-        INSERT INTO branch (name) VALUES ('เชียงราย');
-        INSERT INTO branch (name) VALUES ('ภูเก็ต');      
+        INSERT INTO branch (name) VALUES ('เชียงใหม่'),('เชียงราย'),('ภูเก็ต');
     ข้อ 5.3
         DELETE FROM position WHERE name='sale';   
     ข้อ 5.4
@@ -87,7 +85,7 @@
     ข้อ 5.6
         SELECT * FROM employess;
         LEFT JOIN branch ON employess.branch_id = branch.branch_id
-        WHERE branch.name = 'สนามบินสุวรรณภูมิ' AND branch.name = 'กรุงเทพ';
+        WHERE branch.name IN ( 'สนามบินสุวรรณภูมิ','กรุงเทพ');
     ข้อ 5.7
         SELECT * FROM employess;
         LEFT JOIN branch ON employess.branch_id = branch.branch_id
@@ -116,4 +114,4 @@
         ไม่เคย 
     ข้อ 10
         Laravel,Vue.js,React,Node.js    
-}         -->
+}        
